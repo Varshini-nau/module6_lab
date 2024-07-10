@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITC505 Lab 6 - Holy Grail Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script> <!-- Defer loading of JavaScript for faster page load -->
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <aside class="sidebar">
+        <h2>Menu Side-Bar</h2>
+        <nav>
+            <ul>
+                <li><a href="#">Amazon</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">ChatGPT</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="content">
+        <h2>Main Content Area</h2>
+        <!-- Placeholder for dynamic content from JavaScript -->
+        <div id="interactive-content">
+            <p>This area will be populated by JavaScript actions.</p>
+            <button id="action-button">Click Here</button>
+        </div>
+    </main>
+    <aside class="advertisement">
+        <h2>Advertisement</h2>
+        <a href="https://www.amazon.com/b/?_encoding=UTF8&node=121082095011&pd_rd_w=tpmya&content-id=amzn1.sym.3c267e7c-1c02-4438-ae9d-b2ce8031f152&pf_rd_p=3c267e7c-1c02-4438-ae9d-b2ce8031f152&pf_rd_r=AZ9QHV7QF1HZVZ70MMW2&pd_rd_wg=aY7n8&pd_rd_r=24c43e77-97da-4156-8872-94b606fdc3fb&ref_=pd_hp_d_atf_unk" target="_blank">
+            <img src="path_to_your_advertisement_image.jpg" width="400" height="500" alt="Advertisement Image">
+        </a>
+    </aside>
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+        <div id="addendum">
+            <h3>Addendum</h3>
+            <p>
+                For this assignment, I implemented a Holy Grail layout using CSS grid. The layout includes a header with a logo, a sidebar menu, a main content area featuring interactive JavaScript functionality, an advertisement section linking to a product on Amazon, and a footer with site information.
+                The JavaScript code included handles a specific problem where the user clicks on the image and they will be navigated to the Amazon shopping web page.
+            </p>
+        </div>
+    </footer>
+    <script>
+        var x = document.lastModified;
+        document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
